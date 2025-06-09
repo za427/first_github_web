@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <title>یتیم خانه</title>
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Vazir', sans-serif;
+      background-color: #e0f7f9;
+      color: #004d40;
+      padding: 40px;
+      direction: rtl;
+      line-height: 1.8;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      border: 3px solid #00796b;
+      border-radius: 18px;
+      padding: 30px 40px;
+      background: linear-gradient(145deg, #b2dfdb, #80cbc4);
+      box-shadow: 8px 8px 15px #4db6ac, -8px -8px 15px #a7ffeb;
+    }
+    h1 {
+      font-size: 42px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-align: center;
+      color: #00796b;
+      text-shadow: 1px 1px 3px #4db6ac;
+    }
+    .movie {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: flex-start;
+      margin-bottom: 50px;
+    }
+    .poster {
+      width: 320px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 18px;
+      box-shadow: 0 6px 20px rgba(0, 121, 107, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .poster:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 30px rgba(0, 121, 107, 0.6);
+    }
+    .info {
+      flex: 1;
+      min-width: 250px;
+      font-size: 18px;
+      color: #004d40;
+      text-align: justify;
+    }
+    .back {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      background-color: #00796b;
+      color: white;
+      padding: 12px 26px;
+      border-radius: 15px;
+      margin: 30px auto 0;
+      font-weight: bold;
+      width: fit-content;
+      box-shadow: 3px 3px 6px #004d40;
+      transition: background-color 0.3s ease;
+    }
+    .back:hover {
+      background-color: #004d40;
+      box-shadow: 5px 5px 10px #00796b;
+    }
+    .rainbow {
+      font-weight: bold;
+      animation: rainbowText 3s linear infinite;
+      text-shadow: 0 0 3px rgba(255, 255, 255, 0.7);
+    }
+    .blinker {
+      font-weight: bold;
+      color: #004d40;
+      animation: blink 1s step-start infinite;
+      text-shadow: 0 0 5px #004d40;
+    }
+    @keyframes rainbowText {
+      0%   { color: #ff6b6b; }
+      25%  { color: #feca57; }
+      50%  { color: #48dbfb; }
+      75%  { color: #1dd1a1; }
+      100% { color: #54a0ff; }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50%      { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>یتیم خانه</h1>
+
+    <div class="movie">
+      <img src="../images/spain/یتیم1.jpg" alt="یتیم خانه" class="poster" />
+      <img src="../images/spain/یتیم2.jpg" alt="یتیم خانه" class="poster" />
+
+      <div class="info">
+        <div class="text">
+          یتیم خانه<br/>
+          داستان فیلم: <br/>
+          لورا، زنی میانسال، به همراه خانواده خود به خانه دوران کودکی‌اش بازمی‌گردد. این خانه که در گذشته یتیم‌خانه‌ای بوده، اکنون در وضعیت متروکه قرار دارد. لورا قصد دارد این خانه را به مکانی برای نگهداری کودکان معلول تبدیل کند. اما پس از مدتی، پسرخوانده‌اش، سیمون، با یک دوست نامرئی آشنا می‌شود و شروع به برقراری ارتباط با او می‌کند. سیمون کم‌کم از والدینش دور می‌شود و رفتارهای عجیبی از خود نشان می‌دهد. پس از یک مشاجره میان لورا و سیمون، او ناگهان ناپدید می‌شود و این آغاز اتفاقات ترسناک و مرموزی است که در این خانه رخ می‌دهد.<br/>
+          بازیگران: <br/>
+          بلن روئدا-
+          فرناندو کایو-
+          راجر پرینسپ-
+          میبل ریورا-<br/>
+          سال ساخت: 2007<br/>
+        </div>
+      </div>
+    </div>
+
+    <a href="M81.html" class="back">بازگشت</a>
+  </div>
+
+  <script>
+    const keywords = ["داستان فیلم:", "بازیگران:", "سال ساخت"];
+    const movieTexts = document.querySelectorAll(".text");
+    movieTexts.forEach(textDiv => {
+      keywords.forEach(word => {
+        const regex = new RegExp(word.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1"), "g");
+        textDiv.innerHTML = textDiv.innerHTML.replace(regex, `<span class="rainbow">${word}</span>`);
+      });
+      textDiv.innerHTML = textDiv.innerHTML.replace(/\d+/g, match => {
+        return `<span class="blinker">${match}</span>`;
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>جدول کشورها</title>
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Vazir', sans-serif;
+      background: linear-gradient(135deg, #e0f7f1, #c8f1dd);
+      direction: rtl;
+      padding: 50px;
+      margin: 0;
+      color: #1f3f37;
+    }
+
+    .table-container {
+      max-width: 800px;
+      margin: auto;
+      border: 3px solid #6dccaf;
+      border-radius: 18px;
+      padding: 40px 20px;
+      background-color: #f9fffc;
+      box-shadow: 8px 8px 20px rgba(110, 200, 170, 0.3);
+    }
+
+    caption {
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: #14735d;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px #b6dfd1;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: auto;
+    }
+
+    td {
+      border: 2px solid #7ecdb3;
+      padding: 14px 10px;
+      text-align: center;
+      font-size: 18px;
+      background-color: #ffffff;
+      border-radius: 8px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0f4f3d;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #c0392b;
+    }
+
+    .genre-button {
+      background-color: #14735d;
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      font-size: 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: block;
+      margin: 50px auto 0;
+      box-shadow: 0 6px 12px rgba(20, 115, 93, 0.3);
+    }
+
+    .genre-button:hover {
+      background-color: #0f4f3d;
+      transform: scale(1.05);
+    }
+
+    .genre-button.clicked {
+      background-color: #e74c3c;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="table-container">
+    <table>
+      <caption>کشورها</caption>
+      <tr>
+        <td><a href="M15.html">آمریکا</a></td>
+        <td><a href="M4.html">انگلیس</a></td>
+      </tr>
+      <tr>
+        <td><a href="M26.html">ایران</a></td>
+        <td><a href="M37.html">کره جنوبی</a></td>
+      </tr>
+      <tr>
+        <td><a href="M48.html">ترکیه</a></td>
+        <td><a href="M59.html">هند</a></td>
+        </tr>
+       <tr>
+        <td><a href="M70.html">ایتالیا</a></td>
+        <td><a href="M81.html">اسپانیا</a></td>
+      </tr>
+    </table>
+
+    <button class="genre-button" onclick="handleClick(this)">
+      انتخاب بر اساس ژانر
+    </button>
+  </div>
+
+  <script>
+    function handleClick(button) {
+      button.classList.add('clicked');
+      setTimeout(function () {
+        window.location.href = 'M3.html';
+      }, 2000);
+    }
+  </script>
+
+</body>
+</html>

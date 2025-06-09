@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>ژانرهای فیلم</title>
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Vazir', sans-serif;
+      background: linear-gradient(135deg, #e0f7f1, #c8f1dd);
+      direction: rtl;
+      margin: 0;
+      padding: 50px 20px;
+      color: #1f3f37;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      border: 3px solid #6dccaf;
+      border-radius: 18px;
+      background-color: #f9fffc;
+      padding: 40px 30px;
+      box-shadow: 8px 8px 20px rgba(110, 200, 170, 0.3);
+    }
+
+    h2 {
+      color: #14735d;
+      margin-bottom: 30px;
+      font-size: 30px;
+      text-align: center;
+      text-shadow: 1px 1px 3px #b6dfd1;
+    }
+
+    .genre-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 20px;
+      margin: 15px 0;
+      background-color: #e6faf3;
+      border: 2px solid #6dccaf;
+      border-radius: 14px;
+      text-decoration: none;
+      color: #0e4134;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.5s ease forwards;
+    }
+
+    .genre-card i {
+      font-size: 22px;
+      color: #14735d;
+      flex-shrink: 0;
+    }
+
+    .genre-card:hover {
+      background-color: #c6f4e4;
+      transform: translateY(-3px);
+    }
+
+    .back-button {
+      margin-top: 40px;
+      display: block;
+      background: linear-gradient(90deg, #444, #222);
+      color: white;
+      text-decoration: none;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-size: 16px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+    }
+
+    .back-button:hover {
+      background: linear-gradient(90deg, #666, #333);
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .genre-card:nth-child(2) { animation-delay: 0.1s; }
+    .genre-card:nth-child(3) { animation-delay: 0.2s; }
+    .genre-card:nth-child(4) { animation-delay: 0.3s; }
+    .genre-card:nth-child(5) { animation-delay: 0.4s; }
+    .genre-card:nth-child(6) { animation-delay: 0.5s; }
+    .genre-card:nth-child(7) { animation-delay: 0.6s; }
+    .genre-card:nth-child(8) { animation-delay: 0.7s; }
+    .genre-card:nth-child(9) { animation-delay: 0.8s; }
+    .genre-card:nth-child(10) { animation-delay: 0.9s; }
+    .genre-card:nth-child(11) { animation-delay: 1s; }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>ژانرهای فیلم</h2>
+
+    <a class="genre-card" href="M91.html"><i class="fas fa-laugh"></i> کمدی</a>
+    <a class="genre-card" href="M92.html"><i class="fas fa-film"></i> انیمیشن</a>
+    <a class="genre-card" href="M93.html"><i class="fas fa-heart"></i> عاشقانه</a>
+    <a class="genre-card" href="M94.html"><i class="fas fa-ghost"></i> ترسناک</a>
+    <a class="genre-card" href="M95.html"><i class="fas fa-theater-masks"></i> درام</a>
+    <a class="genre-card" href="M97.html"><i class="fas fa-bolt"></i> اکشن</a>
+    <a class="genre-card" href="M98.html"><i class="fas fa-hat-wizard"></i> فانتزی</a>
+   
+  
+
+    <a href="M2.html" class="back-button">بازگشت</a>
+  </div>
+
+</body>
+</html>

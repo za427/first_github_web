@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ژانر اکشن</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #fff;
+      font-family: 'Vazir', sans-serif;
+      padding: 20px;
+      direction: rtl;
+    }
+  
+    h1 {
+      text-align: center;
+      color: #ff0000;
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #ff0000;
+    }
+  
+    /* کانتینر کارت‌ها */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    /* کارت‌ها */
+    .card {
+      background-color: #1a1a1a;
+      border: 2px solid #ff1a1a;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 0 15px #ff1a1a;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #ff1a1a;
+      animation: shake 0.3s;
+    }
+  
+    @keyframes shake {
+      0% { transform: translate(1px, 1px); }
+      25% { transform: translate(-1px, -2px); }
+      50% { transform: translate(-3px, 0px); }
+      75% { transform: translate(2px, 2px); }
+      100% { transform: translate(1px, -1px); }
+    }
+  
+    .images img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  
+    .card-content {
+      padding: 15px;
+      flex-grow: 1;
+    }
+  
+    .card-content h2 {
+      color: #ff3333;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+  
+    .card-content p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+  
+    .back-button {
+      display: inline-block;
+      margin: 30px auto 0;
+      padding: 10px 25px;
+      background-color: #ff1a1a;
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ff1a1a;
+      transition: background 0.3s;
+      text-align: center;
+    }
+  
+    .back-button:hover {
+      background-color: #cc0000;
+    }
+  </style>
+  
+</head>
+<body>
+
+  <h1>فیلم‌های ژانر اکشن</h1>
+  <div class="container">
+
+    <!-- گانگستر پلیس شیطان -->
+    <div class="card">
+      <div class="images">
+        <img src="../images/action/گانگستر1.jpg" alt="گانگستر پلیس شیطان">
+        <img src="../images/action/گانگستر2.jpg" alt="گانگستر پلیس شیطان ۲">
+      </div>
+      <div class="card-content">
+        <h2>گانگستر پلیس شیطان</h2>
+        <p>نبرد میان پلیس و یک قاتل زنجیره‌ای که با همکاری یک گانگستر پیچیده‌تر می‌شود. فیلمی مهیج و جذاب از سینمای کره.</p>
+      </div>
+    </div>
+
+
+    <!-- جان فدا -->
+    <div class="card">
+      <div class="images">
+        <img src="../images/action/جان1.jpg" alt="جان فدا">
+        <img src="../images/action/جان2.jpg" alt="جان فدا ۲">
+      </div>
+      <div class="card-content">
+        <h2>جان فدا</h2>
+        <p>روایتی از رشادت‌های سربازان ترک در عملیات‌های مرزی. ترکیب درام انسانی و صحنه‌های جنگی.</p>
+      </div>
+    </div>
+
+    <!-- آرگایل -->
+    <div class="card">
+      <div class="images">
+        <img src="../images/action/آرگایل1.jpg" alt="آرگایل">
+        <img src="../images/action/آرگایل2.jpg" alt="آرگایل ۲">
+      </div>
+      <div class="card-content">
+        <h2>آرگایل</h2>
+        <p>نویسنده‌ای که درگیر دنیای واقعی جاسوسی می‌شود. داستانی جذاب با تعقیب‌وگریزهای متنوع.</p>
+      </div>
+    </div>
+
+
+  
+    <div class="card">
+      <div class="images">
+        <img src="../images/action/انتقام1.jpg" alt="انتقام جویان">
+        <img src="../images/action/انتقام2.jpg" alt="انتقام جویان ۲">
+      </div>
+      <div class="card-content">
+        <h2>انتقام جویان</h2>
+        <p>تیم ابرقهرمان‌ها برای نجات زمین متحد می‌شوند. از محبوب‌ترین و عظیم‌ترین فیلم‌های اکشن مارول.</p>
+      </div>
+    </div>
+
+
+
+    <div class="card">
+      <div class="images">
+        <img src="../images/action/سریع1.jpg" alt="سریع و خشن">
+        <img src="../images/action/سریع2.jpg" alt="سریع و خشن ۲">
+      </div>
+      <div class="card-content">
+        <h2>سریع و خشن</h2>
+        <p>تعقیب‌وگریزهای مهیج، ماشین‌های اسپرت و مأموریت‌های نفس‌گیر. یکی از موفق‌ترین فرنچایزهای اکشن.</p>
+      </div>
+    </div>
+
+    <!-- نابودگر -->
+    <div class="card">
+      <div class="images">
+        <img src="../images/action/نابودگر1.jpg" alt="نابودگر">
+        <img src="../images/action/نابودگر2.jpg" alt="نابودگر ۲">
+      </div>
+      <div class="card-content">
+        <h2>نابودگر</h2>
+        <p>روباتی قاتل از آینده برای تغییر سرنوشت بشر. کلاسیک علمی‌تخیلی با صحنه‌های اکشن خیره‌کننده.</p>
+      </div>
+    </div>
+
+    <h1>سریال های ژانر اکشن</h1>
+
+       <!-- شکارچی شهر -->
+       <div class="card">
+        <div class="images">
+          <img src="../images/action/شکارچی1.jpg" alt="شکارچی شهر">
+          <img src="../images/action/شکارچی2.jpg" alt="شکارچی شهر ۲">
+        </div>
+        <div class="card-content">
+          <h2>شکارچی شهر</h2>
+          <p>جوانی که به دنبال انتقام از گذشته‌ای تاریک وارد دنیای مأموریت‌های سری و خطرناک می‌شود.</p>
+        </div>
+      </div>
+  
+      <!-- کی 2 -->
+      <div class="card">
+        <div class="images">
+          <img src="../images/action/کی1.jpg" alt="کی 2">
+          <img src="../images/action/کی2.jpg" alt="کی 2 - تصویر دوم">
+        </div>
+        <div class="card-content">
+          <h2>کی 2</h2>
+          <p>محافظی حرفه‌ای که درگیر توطئه‌های سیاسی و خطرناک می‌شود. اکشنی با مبارزات نفس‌گیر و درام سیاسی.</p>
+        </div>
+      </div>
+  
+      <!-- نسل خورشید -->
+      <div class="card">
+        <div class="images">
+          <img src="../images/action/خورشید1.jpg" alt="نسل خورشید">
+          <img src="../images/action/خورشید2.jpg" alt="نسل خورشید ۲">
+        </div>
+        <div class="card-content">
+          <h2>نسل خورشید</h2>
+          <p>روایت عشق میان یک پزشک و یک سرباز در بطن مأموریت‌های نظامی و نجات‌بخش.</p>
+        </div>
+      </div>
+  
+      <!-- هیلر -->
+      <div class="card">
+        <div class="images">
+          <img src="../images/action/هیلر1.jpg" alt="هیلر">
+          <img src="../images/action/هیلر2.jpg" alt="هیلر ۲">
+        </div>
+        <div class="card-content">
+          <h2>هیلر</h2>
+          <p>مأمور مرموز شبانه که درگیر توطئه‌های گذشته و حقیقت‌های پنهان می‌شود.</p>
+        </div>
+      </div>
+  
+      <!-- شهر دور -->
+      <div class="card">
+        <div class="images">
+          <img src="../images/action/شهر1.jpg" alt="شهر دور">
+          <img src="../images/action/شهر2.jpg" alt="شهر دور ۲">
+        </div>
+        <div class="card-content">
+          <h2>شهر دور</h2>
+          <p>مردی پس از آزادی از زندان، به دنبال حقیقتی تلخ درباره گذشته و عشق قدیمی‌اش می‌گردد.</p>
+        </div>
+      </div>
+  
+      <!-- نفوذی -->
+      <div class="card">
+        <div class="images">
+          <img src="../images/action/نفوذی1.jpg" alt="نفوذی">
+          <img src="../images/action/نفوذی2.jpg" alt="نفوذی ۲">
+        </div>
+        <div class="card-content">
+          <h2>نفوذی</h2>
+          <p>مأمور مخفی‌ای که بین پلیس و باند تبهکاری گیر افتاده است. سریالی پرتنش با درون‌مایه جاسوسی.</p>
+        </div>
+      </div>
+  
+      <!-- آخرین تابستان -->
+      <div class="card">
+        <div class="images">
+          <img src="../images/action/تابستان1.jpg" alt="آخرین تابستان">
+          <img src="../images/action/تابستان2.jpg" alt="آخرین تابستان ۲">
+        </div>
+        <div class="card-content">
+          <h2>آخرین تابستان</h2>
+          <p>دادستانی جوان با گذشته‌ای پیچیده، میان عشق، عدالت و دنیای جرم و جنایت گرفتار می‌شود.</p>
+        </div>
+      </div>
+  
+      <!-- رامو -->
+      <div class="card">
+        <div class="images">
+          <img src="../images/action/رامو1.jpg" alt="رامو">
+          <img src="../images/action/رامو2.jpg" alt="رامو ۲">
+        </div>
+        <div class="card-content">
+          <h2>رامو</h2>
+          <p>مردی از دل مافیا که تصمیم می‌گیرد با سنت‌ها و بی‌عدالتی‌های خانوادگی مقابله کند.</p>
+        </div>
+      </div>
+  
+      <!-- اشرف -->
+      <div class="card">
+        <div class="images">
+          <img src="../images/action/اشرف1.jpg" alt="اشرف">
+          <img src="../images/action/اشرف2.jpg" alt="اشرف ۲">
+        </div>
+        <div class="card-content">
+          <h2>اشرف</h2>
+          <p>زن جوانی که درگیر بازی‌های خطرناک سیاسی و قدرت در قلب استانبول می‌شود.</p>
+        </div>
+      </div>
+  
+      <!-- ماراشلی -->
+      <div class="card">
+        <div class="images">
+          <img src="../images/action/ماراشلی1.jpg" alt="ماراشلی">
+          <img src="../images/action/ماراشلی2.jpg" alt="ماراشلی ۲">
+        </div>
+        <div class="card-content">
+          <h2>ماراشلی</h2>
+          <p>سرباز سابقی که برای محافظت از یک عکاس وارد دنیای تبهکاران و اسرار خطرناک می‌شود.</p>
+        </div>
+      </div>
+  
+      <!-- نیکیتا -->
+      <div class="card">
+        <div class="images">
+          <img src="../images/action/نیکیتا1.jpg" alt="نیکیتا">
+          <img src="../images/action/نیکیتا2.png" alt="نیکیتا ۲">
+        </div>
+        <div class="card-content">
+          <h2>نیکیتا</h2>
+          <p>زنی که از یک سازمان مخفی فرار کرده و حالا با مهارت‌های کشنده خود، به دنبال عدالت است.</p>
+        </div>
+      </div>
+  
+
+
+
+  </div>
+
+  <div style="text-align: center;">
+    <a href="M3.html" class="back-button">بازگشت</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ژانر فانتزی</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@30.1.0/dist/font-face.css');
+
+        body {
+            font-family: 'Vazir', sans-serif;
+            background: linear-gradient(135deg, #8e44ad, #3498db, #1abc9c, #f1c40f, #e67e22, #e74c3c);
+            background-size: 600% 600%;
+            animation: bg-animation 25s ease infinite;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 50px;
+            color: #fff;
+            text-shadow: 0 0 5px #222;
+        }
+
+        @keyframes bg-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 90%;
+            padding: 30px;
+            border: 5px solid #fff;
+            border-radius: 20px;
+            background-color: rgba(30, 30, 30, 0.85);
+            position: relative;
+            overflow: visible;
+            box-sizing: border-box;
+            box-shadow: 0 0 30px rgba(255,255,255,0.4);
+        }
+
+        h1 {
+            text-align: center;
+            color: #f8e71c;
+            font-size: 3em;
+            margin-bottom: 30px;
+            text-shadow: 0 0 15px #f8e71c, 0 0 30px #e67e22;
+        }
+
+        .cards-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #2c3e50, #4ca1af);
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            box-shadow:
+                0 0 10px #f8e71c,
+                0 0 20px #e67e22,
+                0 0 30px #f39c12;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            color: #fff;
+        }
+
+        .card:hover {
+            transform: scale(1.07);
+            box-shadow:
+                0 0 15px #f8e71c,
+                0 0 35px #e67e22,
+                0 0 45px #f39c12,
+                0 0 60px #f1c40f;
+            z-index: 10;
+        }
+
+        .images {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .images img {
+            width: 48%;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(255,255,255,0.3);
+            height: auto;
+            object-fit: cover;
+            border: 2px solid #f8e71c;
+            transition: transform 0.3s ease;
+        }
+
+        .images img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px #f8e71c;
+            border-color: #f1c40f;
+        }
+
+        .card-content h2 {
+            text-align: center;
+            color: #f8e71c;
+            font-size: 1.7em;
+            margin: 0;
+            text-shadow: 0 0 8px #e67e22;
+        }
+
+        .card-content p {
+            color: #ddd;
+            font-size: 1em;
+            line-height: 1.5;
+            text-align: justify;
+            margin: 0;
+        }
+
+        .back-button {
+            display: block;
+            margin: 0 auto 15px;
+            padding: 12px 30px;
+            background-color: #f8e71c;
+            color: #222;
+            border-radius: 10px;
+            text-align: center;
+            width: fit-content;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 0 12px #e67e22;
+        }
+
+        .back-button:hover {
+            background-color: #e67e22;
+            box-shadow: 0 0 25px #f39c12;
+            color: #fff;
+        }
+
+        /* ریسپانسیو */
+        @media (max-width: 1024px) {
+            .container {
+                max-width: 90vw;
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .images {
+                flex-direction: column;
+            }
+            .images img {
+                width: 100%;
+            }
+            .card {
+                padding: 15px 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>فیلم ژانر فانتزی</h1>
+
+        <div class="cards-wrapper">
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/زیبایی1.jpg" alt="زیبایی درون 1" />
+                    <img src="../images/fantezi/زیبایی2.jpg" alt="زیبایی درون 2" />
+                </div>
+                <div class="card-content">
+                    <h2>زیبایی درون</h2>
+                    <p>فیلمی کره‌ای درباره داستان‌های پیچیده روانشناسی که با عناصر فانتزی و دراماتیک ترکیب شده است. زندگی شخصیت‌ها با چالش‌های درونی و خارق‌العاده‌ای روبرو می‌شود.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/رفیق1.jpg" alt="رفیق درون من 1" />
+                    <img src="../images/fantezi/رفیق2.jpg" alt="رفیق درون من 2" />
+                </div>
+                <div class="card-content">
+                    <h2>رفیق درون من</h2>
+                    <p>داستانی فانتزی از پیوند میان دو دوست و دنیایی پر از جادو و رازهای نهان در دل کره جنوبی.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/توالایت1.jpg" alt="توالایت 1" />
+                    <img src="../images/fantezi/توالایت2.jpg" alt="توالایت 2" />
+                </div>
+                <div class="card-content">
+                    <h2>توالایت</h2>
+                    <p>داستان عاشقانه و فانتزی میان یک دختر انسان و یک خون‌آشام که با خطرات و ماجراهای دنیای ماورایی روبرو می‌شوند.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/سیندرلا1.jpg" alt="سیندرلا 1" />
+                    <img src="../images/fantezi/سیندرلا2.jpg" alt="سیندرلا 2" />
+                </div>
+                <div class="card-content">
+                    <h2>سیندرلا</h2>
+                    <p>روایتی کلاسیک از دختر مهربانی که با کمک جادوگر مهربان به جشن شاهزاده می‌رود و زندگی‌اش تغییر می‌کند.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/مالی1.jpg" alt="مالیفیسنت 1" />
+                    <img src="../images/fantezi/مالی2.png" alt="مالیفیسنت 2" />
+                </div>
+                <div class="card-content">
+                    <h2>مالیفیسنت</h2>
+                    <p>داستان فانتزی تاریکی که از نگاه جادوگر معروف داستان خواب زمستانی روایت می‌شود و اسرار گذشته را برملا می‌کند.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/کروئلا1.jpg" alt="کروئلا 1" />
+                    <img src="../images/fantezi/کروئلا2.jpg" alt="کروئلا 2" />
+                </div>
+                <div class="card-content">
+                    <h2>کروئلا</h2>
+                    <p>داستان زندگی یک طراح مد با شخصیت منفی که در دنیای فانتزی و پر زرق و برق لندن قدیم روایت می‌شود.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/سفید1.jpg" alt="سفید برفی 1" />
+                    <img src="../images/fantezi/سفید2.jpg" alt="سفید برفی 2" />
+                </div>
+                <div class="card-content">
+                    <h2>سفید برفی</h2>
+                    <p>نسخه‌ای بازسازی شده از داستان کلاسیک سفید برفی که جنگ و جادو را به تصویر می‌کشد و به زندگی پر پیچ و خم شاهزاده خانم می‌پردازد.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/آکوامن1.jpg" alt="آکوامن 1" />
+                    <img src="../images/fantezi/آکوامن2.jpg" alt="آکوامن 2" />
+                </div>
+                <div class="card-content">
+                    <h2>آکوامن</h2>
+                    <p>قهرمانی نیمه انسانی و نیمه آبی که باید بین دنیای زمین و زیر آب تعادل برقرار کند و دشمنانش را شکست دهد.</p>
+                </div>
+            </div>
+
+            <h1 style="grid-column: 1 / -1;">سریال ژانر فانتزی</h1>
+
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/مردگان1.jpg" alt="مردگان">
+                    <img src="../images/fantezi/مردگان2.jpg" alt="مردگان">
+                </div>
+                <div class="card-content">
+                    <h2>مردگان</h2>
+                    <p>سریالی درباره بازگشت مردگان به دنیای زنده‌ها با حال‌وهوای رمزآلود.</p>
+                    <p><strong>سال ساخت:</strong> ۲۰۱۸</p>
+                    <p><strong>کشور:</strong> ترکیه</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/شاه1.jpg" alt="شاه ماران">
+                    <img src="../images/fantezi/شاه2.jpg" alt="شاه ماران">
+                </div>
+                <div class="card-content">
+                    <h2>شاه ماران</h2>
+                    <p>درامی افسانه‌ای با عناصر جادو و اسطوره‌های شرق.</p>
+                    <p><strong>سال ساخت:</strong> ۲۰۲۳</p>
+                    <p><strong>کشور:</strong> ترکیه</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/عطیه1.jpg" alt="عطیه">
+                    <img src="../images/fantezi/عطیه2.jpg" alt="عطیه">
+                </div>
+                <div class="card-content">
+                    <h2>عطیه</h2>
+                    <p>زنی که ارتباطش با یک راز باستانی زندگی‌اش را دگرگون می‌کند.</p>
+                    <p><strong>سال ساخت:</strong> ۲۰۱۹</p>
+                    <p><strong>کشور:</strong> ترکیه</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/هتل1.jpg" alt="هتل دل لونا">
+                    <img src="../images/fantezi/هتل2.jpg" alt="هتل دل لونا">
+                </div>
+                <div class="card-content">
+                    <h2>هتل دل لونا</h2>
+                    <p>هتلی مخصوص ارواح با مدیریت زنی گرفتار گذشته.</p>
+                    <p><strong>سال ساخت:</strong> ۲۰۱۹</p>
+                    <p><strong>کشور:</strong> کره جنوبی</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/گابلین1.jpg" alt="گابلین">
+                    <img src="../images/fantezi/گابلین2.jpg" alt="گابلین">
+                </div>
+                <div class="card-content">
+                    <h2>گابلین</h2>
+                    <p>جاودانه‌ای که به‌دنبال عروس انسانی برای پایان دادن به جاودانگی‌اش می‌گردد.</p>
+                    <p><strong>سال ساخت:</strong> ۲۰۱۶</p>
+                    <p><strong>کشور:</strong> کره جنوبی</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/w1.jpg" alt="دبلیو">
+                    <img src="../images/fantezi/w2.jpg" alt="دبلیو">
+                </div>
+                <div class="card-content">
+                    <h2>دبلیو</h2>
+                    <p>واقعیت و دنیای کمیک در هم تنیده می‌شوند و شخصیت‌ها بین دو دنیا در رفت‌وآمدند.</p>
+                    <p><strong>سال ساخت:</strong> ۲۰۱۶</p>
+                    <p><strong>کشور:</strong> کره جنوبی</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/روباه1.jpg" alt="افسانه روباه">
+                    <img src="../images/fantezi/روباه2.jpg" alt="افسانه روباه">
+                </div>
+                <div class="card-content">
+                    <h2>افسانه روباه</h2>
+                    <p>موجودی افسانه‌ای با نه دم که عاشق انسانی می‌شود.</p>
+                    <p><strong>سال ساخت:</strong> ۲۰۲۰</p>
+                    <p><strong>کشور:</strong> کره جنوبی</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/شیطان1.jpg" alt="شیطان من">
+                    <img src="../images/fantezi/شیطان2.jpg" alt="شیطان من">
+                </div>
+                <div class="card-content">
+                    <h2>شیطان من</h2>
+                    <p>شیطانی که وارد بدن انسان می‌شود و تجربه عشق را می‌آزماید.</p>
+                    <p><strong>سال ساخت:</strong> ۲۰۲۳</p>
+                    <p><strong>کشور:</strong> کره جنوبی</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/خون1.jpg" alt="خون‌آشام‌ها">
+                    <img src="../images/fantezi/خون2.jpg" alt="خون‌آشام‌ها">
+                </div>
+                <div class="card-content">
+                    <h2>خاطرات خون‌آشام</h2>
+                    <p>ماجرای خون‌آشام‌های نوجوان درگیر عشق و نبردهای خانوادگی.</p>
+                    <p><strong>سال ساخت:</strong> ۲۰۰۹</p>
+                    <p><strong>کشور:</strong> آمریکا</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/مرلین1.jpg" alt="مرلین">
+                    <img src="../images/fantezi/مرلین2.jpg" alt="مرلین">
+                </div>
+                <div class="card-content">
+                    <h2>مرلین</h2>
+                    <p>جادوگر جوانی که سرنوشت پادشاهی را دگرگون می‌کند.</p>
+                    <p><strong>سال ساخت:</strong> ۲۰۰۸</p>
+                    <p><strong>کشور:</strong> بریتانیا</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/ونزدی1.jpg" alt="ونزدی">
+                    <img src="../images/fantezi/ونزدی2.jpg" alt="ونزدی">
+                </div>
+                <div class="card-content">
+                    <h2>ونزدی</h2>
+                    <p>دختری از خانواده آدامز که در مدرسه‌ای اسرارآمیز تحصیل می‌کند.</p>
+                    <p><strong>سال ساخت:</strong> ۲۰۲۲</p>
+                    <p><strong>کشور:</strong> آمریکا</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="../images/fantezi/اصیل1.jpg" alt="اصیل‌ها">
+                    <img src="../images/fantezi/اصیل2.jpg" alt="اصیل‌ها">
+                </div>
+                <div class="card-content">
+                    <h2>اصیل‌ها</h2>
+                    <p>خانواده‌ای از خون‌آشام‌های اولیه درگیر قدرت و روابط خونین.</p>
+                    <p><strong>سال ساخت:</strong> ۲۰۱۳</p>
+                    <p><strong>کشور:</strong> آمریکا</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="M3.html" class="back-button">بازگشت به صفحه ژانرها</a>
+    </div>
+</body>
+</html>
